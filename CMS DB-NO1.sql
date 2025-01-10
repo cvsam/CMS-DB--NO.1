@@ -12,6 +12,20 @@ create table Properties (
 );
 select * from properties;
 -- insert 10 Records.
+
+insert into properties(PropertyID, Address, City, Type, Size, Price, Status)
+values(1,"10 Main St","Kampala","Residential",1200, 15000.0,"Available"),
+(2,"74 jinja road", "kampala","Residential",1210,1600.45,"Rented"),
+(3,"west avenue", "wakiso", "industrial", 1600, 32000.8,"Available"),
+(4, "namanve", "wakiso", "industrial", 1800, 45000.0, "Rented"),
+(5, "jomayi","mukono", "industrial", 500, 23000.23, "Available"),
+(6,"nansaana","kampala", "commercial", 1100, 1532.12, "sold"),
+(7, "naalya", "kampala", "Residential", 900, 54313.0, "Rented"),
+(8, "mutungo", "kampala", "commercial", 1100, 9754.5,"sold"),
+(9,"namugongo", "kampala", "Residential", 450, 20000.0, "available"),
+(10, "11 street", "kampala", "commercial", 800, 35000.0, "Rented");
+
+
 -- properties for sale in a pecific city
 SELECT * FROM Properties WHERE City = 'kampala' AND Status = 'Available';
 -- properties status.
